@@ -1,2 +1,2 @@
 # hyprarchiiso
-Archiso based iso with hyperland
+Archiso based iso with hyprland
