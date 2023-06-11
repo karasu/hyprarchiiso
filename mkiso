@@ -1,3 +1,4 @@
 #!/bin/sh
-echo "Creating iso. Using /tmp/archiso-tmp as working directory.."
-mkarchiso -v -w /tmp/archiso-tmp .
+echo "Creating iso in hyprarchiso..."
+mkdir hyprarchiso
+mkarchiso -v -w hyprarchiso
