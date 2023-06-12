@@ -11,9 +11,8 @@ vt = 1
 
 #command = "agreety -c sway"
 command = "tuigreet -w 40 --time --cmd hypr"
-#command = "tuigreet -w 40 --time --cmd wayfire"
-#command = "sway --config /etc/greetd/sway-config"
-#command = "ddlm --target hypr"
+
+user = "hypr"
 
 # The user to run the command as. The privileges this user must have depends
 # on the greeter. A graphical greeter may for example require the user to be
