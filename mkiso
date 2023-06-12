@@ -1,4 +1,4 @@
 #!/bin/sh
-echo "Creating iso in hyprarchiso..."
-mkdir -p hyprarchiso
-mkarchiso -v -w hyprarchiso .
+echo "Creating iso file..."
+mkdir -p work
+mkarchiso -v -w work .

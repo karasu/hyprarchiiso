@@ -2,7 +2,7 @@
 # shellcheck disable=SC2034
 
 iso_name="hyprarchlinux"
-iso_label="ARCH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_label="HYPRARCH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="karasu <https://github.com/karasu>"
 iso_application="Hyprland Arch Linux Live"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"

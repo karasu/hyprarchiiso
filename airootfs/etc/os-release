@@ -1,5 +1,5 @@
-NAME="Hypr Arch Linux"
-PRETTY_NAME="Hypr Arch Linux"
+NAME="HyprArch Linux"
+PRETTY_NAME="HyprArch Linux"
 ID=hyprarch
 BUILD_ID=rolling
 ANSI_COLOR="38;2;23;147;209"
