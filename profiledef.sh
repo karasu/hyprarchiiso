@@ -20,8 +20,10 @@ file_permissions=(
   ["/etc/gshadow"]="0:0:400"
   ["/root"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"
+  ["/etc/sudoers.d"]="0:0:750"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/hypr"]="0:0:755"
+  ["/usr/local/bin/oh-my-zsh-install.sh"]="0:0:755"
 )

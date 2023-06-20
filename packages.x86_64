@@ -41,6 +41,7 @@ ffmpegthumbnailer
 foot-terminfo
 fsarchiver
 git
+gnome-themes-extra
 gnu-netcat
 gpart
 gpm
@@ -72,6 +73,7 @@ kitty
 less
 lftp
 libfido2
+libsecret
 libusb-compat
 light
 linux
@@ -82,6 +84,7 @@ livecd-sounds
 lsd
 lsscsi
 lvm2
+lzop
 lxappearance
 lynx
 mako
@@ -119,6 +122,8 @@ parted
 partimage
 pavucontrol
 pcsclite
+pipewire
+pipewire-pulse
 polkit-gnome
 powerline
 ppp
@@ -159,9 +164,13 @@ terminus-font
 testdisk
 thunar
 thunar-archive-plugin
+tlp
 tmux
 tpm2-tss
 udftools
+udisks2
+unrar
+unzip
 usb_modeswitch
 usbmuxd
 usbutils
@@ -180,12 +189,15 @@ wofi
 wpa_supplicant
 wvdial
 xdg-desktop-portal-hyprland
+xdg-user-dirs
 xfce4-settings
 xfsprogs
 xl2tpd
+xz
 youtube-dl
 zathura
 zathura-pdf-poppler
+zip
 zsh
 zsh-autosuggestions
 zsh-completions
