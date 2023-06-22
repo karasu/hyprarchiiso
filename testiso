@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Read SOURCE_DATE_EPOCH from file early
+build_date_file="$(realpath -q -- "${override_work_dir:-./work}/build_date")" || :
+if [[ -f "$build_date_file" ]]; then
+    SOURCE_DATE_EPOCH="$(<"$build_date_file")"
+fi
+unset build_date_file
+
+iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
+iso="out/hyprarchlinux-${iso_version}-x86_64.iso"
+
+run_archiso -i ${iso}
+
