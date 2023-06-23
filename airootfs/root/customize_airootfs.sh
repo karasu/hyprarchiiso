@@ -6,6 +6,16 @@
 # Files are in airootfs/opt/customize
 CUSTOMIZE="/opt/customize"
 
+_yay() {
+
+AUR_PACKAGES=`jq '.aur[]' packages_aur.x86_64`
+
+for package in ${AUR_PACKAGES[@]}
+do
+  sudo -u $USR -- yay -S --needed --noconfirm $package
+done
+}
+
 _cp () {
     cp ${CUSTOMIZE}/$1 /root/$1
     cp ${CUSTOMIZE}/$1 /etc/skel/$1

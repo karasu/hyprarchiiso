@@ -43,6 +43,7 @@ fsarchiver
 git
 gnome-themes-extra
 gnu-netcat
+google-chrome
 gpart
 gpm
 gptfdisk
@@ -108,10 +109,10 @@ nerd-fonts
 network-manager-applet
 nfs-utils
 nilfs-utils
-nitch
 nmap
 ntfs-3g
 nvme-cli
+nwg-look-bin
 open-iscsi
 open-vm-tools
 openconnect
@@ -158,6 +159,7 @@ sudo
 swappy
 swayidle
 swaylock
+swaylock-effects
 syslinux
 systemd-resolvconf
 tcpdump
@@ -186,6 +188,7 @@ wireplumber
 wireless-regdb
 wireless_tools
 wl-clipboard
+wlogout
 wofi
 wpa_supplicant
 wvdial
@@ -195,6 +198,7 @@ xfce4-settings
 xfsprogs
 xl2tpd
 xz
+yay
 youtube-dl
 zathura
 zathura-pdf-poppler
