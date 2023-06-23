@@ -6,27 +6,26 @@
 # Files are in airootfs/opt/customize
 CUSTOMIZE="/opt/customize"
 
-_yay() {
+USR="hypr"
+AUR_PACKAGES=`jq '.aur[]' /opt/customize/packages_aur.x86_64`
 
-AUR_PACKAGES=`jq '.aur[]' packages_aur.x86_64`
-
-for package in ${AUR_PACKAGES[@]}
-do
-  sudo -u $USR -- yay -S --needed --noconfirm $package
-done
+install_aur_packages () {
+    for package in ${AUR_PACKAGES[@]}
+    do
+      sudo -u $USR -- yay -S --needed --noconfirm $package
+    done
 }
 
-_cp () {
-    cp ${CUSTOMIZE}/$1 /root/$1
-    cp ${CUSTOMIZE}/$1 /etc/skel/$1
-    cp ${CUSTOMIZE}/$1 /home/hypr/$1
+copy_customize_files () {
+    mkdir -p /root/.config
+    mkdir -p /etc/skel/.config
+    mkdir -p /home/hypr/.config
+
+    cp -Rv ${CUSTOMIZE}/. /root
+    cp -Rv ${CUSTOMIZE}/. /etc/skel
+    cp -Rv ${CUSTOMIZE}/. /home/hypr
 }
 
-mkdir -p /root/.config
-mkdir -p /etc/skel/.config
-mkdir -p /home/hypr/.config
-
-_cp .zshrc
-_cp .config/starship.toml
-
+install_aur_packages
+copy_customize_files
 
