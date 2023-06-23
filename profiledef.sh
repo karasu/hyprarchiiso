@@ -26,4 +26,5 @@ file_permissions=(
   ["/usr/local/bin/livecd-sound"]="0:0:755"
   ["/usr/local/bin/hypr"]="0:0:755"
   ["/usr/local/bin/oh-my-zsh-install.sh"]="0:0:755"
+  ["/root/customize_airootfs.sh"]="0:0:755"
 )
