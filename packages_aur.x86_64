@@ -1,1 +1,6 @@
-airootfs/opt/customize/packages_aur.x86_64
+{
+"aur": [
+   "nitch",
+   "swww"
+]
+}

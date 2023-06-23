@@ -6,16 +6,6 @@
 # Files are in airootfs/opt/customize
 CUSTOMIZE="/opt/customize"
 
-USR="hypr"
-AUR_PACKAGES=`jq '.aur[]' /opt/customize/packages_aur.x86_64`
-
-install_aur_packages () {
-    for package in ${AUR_PACKAGES[@]}
-    do
-      sudo -u $USR -- yay -S --needed --noconfirm $package
-    done
-}
-
 copy_customize_files () {
     mkdir -p /root/.config
     mkdir -p /etc/skel/.config
@@ -26,6 +16,5 @@ copy_customize_files () {
     cp -Rv ${CUSTOMIZE}/. /home/hypr
 }
 
-install_aur_packages
 copy_customize_files
 
