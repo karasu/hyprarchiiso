@@ -47,7 +47,7 @@ uuidd:x:68:
 avahi:x:974:
 lightdm:x:973:
 polkitd:x:102:
-karasu:x:1000:
+hypr:x:1000:
 locate:x:21:
 git:x:972:
 sddm:x:971:
